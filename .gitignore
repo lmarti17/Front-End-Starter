@@ -1,0 +1,4 @@
+# files and folders ignored by git
+
+*.DS_Store
+node_modules/*
