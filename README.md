@@ -35,7 +35,7 @@ The directories:
 
 * Run `gulp js_libs` to compile js/vendor libs in js/dist/vendor.js
 
-#### A repo from [Lucas Martin](http://lucasmartin.fr "Link to lucasmartin.fr")
+#### A repo from [Lucas Martin](https://twitter.com/lmarti17 "Link to twitter profile")
 
 
 
