@@ -1,6 +1,5 @@
 # Front-End starter
 
- Includes Bootstrap and JQuery 2.1.4
 
 ### Informations
 The directories:
@@ -25,7 +24,7 @@ The directories:
 
 ### Development | Gulp scripts:
 
-* Run `gulp` to watch any changes and auto-compile
+* Run `gulp` to watch any changes and auto-compile (nb: It `build` the project first)
 
 * Run `gulp build` to compile one time the project
 
@@ -35,7 +34,7 @@ The directories:
 
 * Run `gulp js_libs` to compile js/vendor libs in js/dist/vendor.js
 
-#### A repo from [Lucas Martin](https://twitter.com/lmarti17 "Link to twitter profile")
+#### A repo from <contact@lucasmartin.fr>
 
 
 
