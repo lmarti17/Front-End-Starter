@@ -9,7 +9,7 @@ var plumber 	= require('gulp-plumber');
 gulp.task('build', ['sass','js_app', 'js_libs']);
 
 // Watch changments
-gulp.task('default', function() {
+gulp.task('default', ['build'], function() {
 
   gulp.watch( 'js/app/*.js', ['js_app']);
 
