@@ -84,5 +84,5 @@ gulp.task('minify_js', function () {
 	gulp.src(['js/vendor/vendor.js','js/dist/app.js'])
 		.pipe(jsmin())
     .pipe(concat('app.min.js'))
-		.pipe(gulp.dest('js/prod/'));
+		.pipe(gulp.dest('js/dist/'));
 });

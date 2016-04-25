@@ -34,8 +34,6 @@ The directories:
 
 * Run `gulp js_libs` to compile js/vendor libs in js/dist/vendor.js
 
+* Run `gulp buildProd` to minimize css and js in stylesheets/app.min.css and js/dist/app.min.js
+
 #### A repo from <contact@lucasmartin.fr>
-
-
-
-
