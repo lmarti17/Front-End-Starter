@@ -39,7 +39,7 @@ gulp.task('js_app', function(){
 
 // Sass
 gulp.task('sass', function(){
-  return gulp.src( 'sass/**/*.scss' )
+  return gulp.src( 'sass/app.scss' )
         .pipe(plumber({
           errorHandler: function (error) {
             console.log(error.message);
