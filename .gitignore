@@ -2,6 +2,7 @@
 
 *.DS_Store
 *.gitkeep
+node_modules/*
 assets/*
 !assets/.gitkeep
 node_modules/*

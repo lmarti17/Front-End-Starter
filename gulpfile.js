@@ -5,6 +5,7 @@ var watch  		= require('gulp-watch');
 var plumber 	= require('gulp-plumber');
 var csso      = require('gulp-csso');
 var jsmin     = require('gulp-jsmin');
+var autoprefixer = require('gulp-autoprefixer');
 
 
 // Default build
@@ -48,8 +49,22 @@ gulp.task('sass', function(){
         .pipe(sass({
           indentedSyntax: false
         }))
+        .pipe(autoprefixer({
+    			browsers: ['last 3 versions'],
+    			cascade: false
+    		}))
         .pipe(gulp.dest( 'stylesheets/' ))
 });
+
+// // Add prefix to css attributes
+// gulp.task('autoprefixer', function () {
+// 	return gulp.src('src/app.css')
+// 		.pipe(autoprefixer({
+// 			browsers: ['last 2 versions'],
+// 			cascade: false
+// 		}))
+// 		.pipe(gulp.dest('dist'));
+// });
 
 // Vendors
 gulp.task('js_libs', function() {

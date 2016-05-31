@@ -28,7 +28,7 @@ The directories:
 
 * Run `gulp build` to compile one time the project
 
-* Run `gulp sass` to compile scss
+* Run `gulp sass` to compile scss (autoprefixer are added automatically)
 
 * Run `gulp js_app` to compile js files from js/app in js/dist/app.js
 

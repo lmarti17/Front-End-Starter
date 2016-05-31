@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
     "gulp-csso": "^2.0.0",
     "gulp-jsmin": "^0.1.5"
   },
