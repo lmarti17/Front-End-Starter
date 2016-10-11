@@ -1,5 +1,7 @@
-$(document).ready(function() {
+import domready from 'domready';
 
-console.log('Let\'s get things done !');
+domready(() => {
+
+  console.log('Let\'s get things done !');
 
 });

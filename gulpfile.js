@@ -1,11 +1,13 @@
-var gulp 			= require('gulp');
-var concat 		= require('gulp-concat');
-var sass  		= require('gulp-sass');
-var watch  		= require('gulp-watch');
-var plumber 	= require('gulp-plumber');
-var csso      = require('gulp-csso');
-var jsmin     = require('gulp-jsmin');
-var autoprefixer = require('gulp-autoprefixer');
+const gulp 			= require('gulp');
+const concat 		= require('gulp-concat');
+const sass  		= require('gulp-sass');
+const watch  		= require('gulp-watch');
+const plumber 	= require('gulp-plumber');
+const csso      = require('gulp-csso');
+const jsmin     = require('gulp-jsmin');
+const babel     = require('gulp-babel');
+const sourcemaps= require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
 
 
 // Default build
@@ -34,7 +36,12 @@ gulp.task('js_app', function(){
             console.log(error.message);
             this.emit('end');
         }}))
+        .pipe(sourcemaps.init())
+        .pipe(babel({
+           presets: ['es2015']
+         }))
         .pipe(concat("app.js"))
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('js/dist/'))
 });
 

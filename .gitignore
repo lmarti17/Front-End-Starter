@@ -2,10 +2,8 @@
 
 *.DS_Store
 *.gitkeep
+npm-debug.log
 node_modules/*
 assets/*
 !assets/.gitkeep
-node_modules/*
-js/vendor/*
-sass/vendor/*
-bower_components/*
+stylesheets/*
