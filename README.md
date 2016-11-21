@@ -1,39 +1,32 @@
 # Front-End starter
-
+Using gulp
 
 ### Informations
 The directories:
-* __sass/__
-    * views/ (Each part of your sass)  
+* __src/templates/__ (The html files)
+* __src/sass/__
+    * views/ (Each view style)
+    * base/ (Each common and utils style)
     * app.scss (Import each file in the views directory)
-    * reset.scss
-* __js/__
+* __src/js/__
     * app/ (The js files directoy)
-    * dist/ (The compiled js directory in *app.js*)
     * vendor/ (The libraries you include)
-* __stylesheets/__ (The compiled scss in *app.css*)
+* __src/assets/__
+    * fonts/ (The fonts files)
+    * img/ (The images)
+* __dist/__ (The compiled code)
 
 
 ### How to install
 
-1. Download the repo
+1. Clone repo
 
-2. Install the dependencies: `npm install`
+2. Install the dependencies: `npm i`
 
-3. Build the app: `gulp build`
+3. Build the app: `npm start`
 
 ### Development | Gulp scripts:
 
-* Run `gulp` to watch any changes and auto-compile (nb: It `build` the project first)
-
-* Run `gulp build` to compile one time the project
-
-* Run `gulp sass` to compile scss (autoprefixer are added automatically)
-
-* Run `gulp js_app` to compile js files from js/app in js/dist/app.js
-
-* Run `gulp js_libs` to compile js/vendor libs in js/dist/vendor.js
-
-* Run `gulp buildProd` to minimize css and js in stylesheets/app.min.css and js/dist/app.min.js
+* Run `npm start` to watch any changes and auto-compile (nb: It builds the project first)
 
 #### A repo from <contact@lucasmartin.fr>
