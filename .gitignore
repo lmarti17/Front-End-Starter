@@ -1,0 +1,7 @@
+# files and folders ignored by git
+
+*.DS_Store
+*.gitkeep
+npm-debug.log
+node_modules/*
+dist/*

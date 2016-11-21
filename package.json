@@ -1,0 +1,26 @@
+{
+  "name": "front-end-starter",
+  "version": "1.0.0",
+  "description": "Simple front-end-starter",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "author": "Lucas Martin",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-html-prettify": "0.0.1",
+    "gulp-jsmin": "^0.1.5",
+    "shelljs": "^0.7.5"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.1",
+    "gulp-watch": "^4.3.5"
+  }
+}
