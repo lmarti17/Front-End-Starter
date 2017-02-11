@@ -4,6 +4,4 @@
 *.gitkeep
 npm-debug.log
 node_modules/*
-assets/*
-!assets/.gitkeep
-stylesheets/*
+dist/

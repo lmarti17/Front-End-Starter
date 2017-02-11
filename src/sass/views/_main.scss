@@ -1,0 +1,134 @@
+////////////
+// PROJECTS
+////////////
+
+
+.projects,
+.lab
+{
+    margin-bottom: 45px;
+    h3
+    {
+        font:
+        {
+            family: $font-jaapokki;
+            size: 2em;
+        }
+
+        margin-bottom: 15px;
+		animation: textArrival .5s forwards;
+		opacity: 0;
+    }
+
+
+	ul {
+		padding-left: 10px;
+		display: inline-block;
+	}
+
+
+    ul li
+    {
+        position: relative;
+
+        margin-bottom: 15px;
+        padding-left: 25px;
+
+		animation: textArrival .5s forwards;
+		opacity: 0;
+
+
+        &:before
+        {
+            display: inline-block;
+
+            width: 8px;
+            height: 8px;
+
+            content: ' ';
+
+            background-color: $color-red;
+
+            @include positionCenter(0, 50%);
+
+            @include transition(.25s);
+        }
+
+        a
+        {
+			@include transition(.25s)
+            font:
+            {
+                family: $font-worksans-regular;
+                size: 1.6em;
+            }
+
+            display: inline-block;
+
+            text-decoration: none;
+
+			&:hover
+			{
+				opacity: 1;
+				&:before
+				{
+					transform: translate(-50%, -50%) rotate(90deg);
+				}
+
+				& > span
+				{
+					opacity: 1;
+				}
+			}
+
+        }
+
+        a > span
+        {
+            font:
+            {
+                family: $font-worksans-extralight;
+                size: 1em;
+            }
+
+            display: inline-block;
+
+            opacity: .15;
+
+            @include transition(.25s);
+        }
+    }
+}
+
+
+
+
+// Animation delay => PROJECTS
+.projects{
+	h3 {
+	animation-delay: .4s;
+	}
+	ul li {
+		@for $i from 1 through 4 {
+			&:nth-child(#{$i}) {
+				animation-delay: #{$i * .15s + .4s};
+			}
+		}
+	}
+}
+
+
+
+// Animation delay => LAB
+.lab{
+	h3 {
+		animation-delay: 1.1s;
+	}
+	ul li {
+		@for $i from 1 through 4 {
+			&:nth-child(#{$i}) {
+				animation-delay: #{$i * .15s + 1.1s};
+			}
+		}
+	}
+}

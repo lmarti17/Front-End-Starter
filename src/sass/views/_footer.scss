@@ -1,0 +1,43 @@
+.footer
+{
+    position: absolute;
+    left: 50px;
+    bottom: 15px;
+    ul li
+    {
+        display: inline-block;
+
+        margin: 0 15px;
+
+        opacity: 0;
+		@include transition(.25s);
+
+        animation: textArrivalFooter .5s forwards;
+
+		@for $i from 1 through 4 {
+			&:nth-child(#{$i}) {
+				animation-delay: #{$i * .15s + 1.7s};
+			}
+		}
+
+		&:first-child{
+			margin-left: 0;
+		}
+
+
+		&:hover{
+			opacity: 1;
+		}
+
+        a
+        {
+            font:
+            {
+                family: $font-worksans-regular;
+                size: 1.6em;
+            }
+
+            text-transform: uppercase;
+        }
+    }
+}

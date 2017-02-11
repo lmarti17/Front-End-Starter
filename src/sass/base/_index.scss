@@ -1,0 +1,56 @@
+// Reset import
+@import './base/_reset.scss';
+
+@import './base/_fonts.scss';
+
+@import './base/_variables.scss';
+
+@import './base/_mixins.scss';
+
+@import './base/_animations.scss';
+
+
+
+body
+{
+    font-size: 62.5%;
+
+    overflow: hidden;
+
+    padding: 30px;
+
+    color: $color-black;
+
+	user-select: none;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: inherit;
+}
+.wrapper
+{
+    position: relative;
+
+    height: calc(100vh - 60px);
+    padding: 50px;
+
+    border: 7px solid $color-red;
+	// box-shadow: inset 0 0 0 2px transparent;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+    .canvas
+    {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+
+        display: inline-block;
+    }
+}
