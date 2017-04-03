@@ -1,0 +1,56 @@
+.footer
+{
+    // position: absolute;
+    // left: 50px;
+    // bottom: 15px;
+
+    @media screen and (max-width: $bp-736){
+
+        position: initial;
+
+    }
+    ul li
+    {
+        display: inline-block;
+
+        margin: 0 15px;
+
+        opacity: 0;
+		@include transition(.25s);
+
+        animation: textArrivalFooter .5s forwards;
+
+		@for $i from 1 through 4 {
+			&:nth-child(#{$i}) {
+				animation-delay: #{$i * .15s + 1.1s};
+			}
+		}
+
+		&:first-child{
+			margin-left: 0;
+		}
+
+        @media screen and (max-width: $bp-736){
+
+            display: block;
+			margin: 25px 0;
+        }
+
+
+		&:hover{
+			opacity: 1;
+			transform: translateY(2px);
+		}
+
+        a
+        {
+            font:
+            {
+                family: $font-worksans-regular;
+                size: 1.6em;
+            }
+
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,161 @@
+////////////
+// PROJECTS
+////////////
+
+
+.projects,
+.lab
+{
+    margin-bottom: 45px;
+    h3
+    {
+        font:
+        {
+            family: $font-jaapokki;
+            size: 2em;
+        }
+
+        margin-bottom: 15px;
+		animation: textArrival .5s forwards;
+		transition-delay: 0.35s;
+		opacity: 0;
+    }
+
+
+	ul {
+		padding-left: 10px;
+		display: inline-block;
+	}
+
+
+    ul li
+    {
+        position: relative;
+
+        margin-bottom: 15px;
+        padding-left: 25px;
+
+		animation: textArrival .2s forwards;
+		opacity: 0;
+
+
+        &:before
+        {
+            display: inline-block;
+
+            width: 8px;
+            height: 8px;
+
+            content: ' ';
+
+            background-color: $color-red;
+
+            @include positionCenter(0, 50%);
+
+            @include transition(.25s);
+        }
+
+        a, p
+        {
+			@include transition(.25s)
+            font:
+            {
+                family: $font-worksans-regular;
+                size: 1.6em;
+            }
+
+            display: inline-block;
+
+            // text-decoration: none;
+
+			&:hover
+			{
+				opacity: 1;
+				&:before
+				{
+					transform: translate(-50%, -50%) rotate(90deg);
+				}
+
+				& > span
+				{
+					opacity: 1;
+				}
+			}
+
+        }
+
+
+        a > span,
+		p > span
+        {
+            font:{
+                family: $font-worksans-extralight;
+                size: 1em;
+            }
+
+            display: inline-block;
+
+            opacity: .15;
+
+            @include transition(.25s);
+
+			@media screen and (max-width: $bp-736){
+				display: none;
+			}
+        }
+    }
+}
+
+
+
+
+// Animation delay => PROJECTS
+.projects, .lab {
+	h3 {
+	animation-delay: .5s;
+	}
+	ul li {
+		@for $i from 1 through 5 {
+			&:nth-child(#{$i}) {
+				animation-delay: #{$i * .1s + .65s};
+			}
+		}
+	}
+}
+
+
+
+// Animation delay => LAB
+// .lab{
+// 	h3 {
+// 		animation-delay: 0.5s;
+// 	}
+// 	ul li {
+// 		@for $i from 1 through 4 {
+// 			&:nth-child(#{$i}) {
+// 				animation-delay: #{$i * .1s + 0.65s};
+// 			}
+// 		}
+// 	}
+// }
+
+
+
+// Thumbnail
+
+#thumbnail{
+
+
+	position: absolute;
+	right: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	.cover{
+
+		width: 700px;
+		height: 400px;
+		display: inline-block;
+
+	}
+}

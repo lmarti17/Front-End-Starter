@@ -1,0 +1,14 @@
+@mixin positionCenter($x, $y)
+{
+    position: absolute;
+    top: $y;
+    left: $x;
+
+    transform: translate(-50%, -50%);
+}
+
+
+@mixin transition($x){
+
+	transition: all ease-out $x;
+}

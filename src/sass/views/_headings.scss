@@ -1,0 +1,80 @@
+////////////
+// HEADER
+////////////
+
+header
+{
+    margin-bottom: 80px;
+
+	@media screen and (max-width: $bp-1440){
+
+		margin-bottom: 40px;
+	}
+	@media screen and (max-width: $bp-1280){
+
+		margin-bottom: 30px;
+	}
+
+    h1,
+    h2,
+    p
+    {
+        opacity: 0;
+		animation: textArrival .5s forwards;
+    }
+
+
+
+    h1
+    {
+        font:
+        {
+            family: $font-jaapokki;
+            size: 4em;
+        };
+
+        margin-bottom: 10px;
+
+    }
+
+
+
+    h2
+    {
+        font:
+        {
+            family: $font-worksans-medium;
+            size: 2em;
+        };
+
+        margin-bottom: 25px;
+
+        animation-delay: .15s;
+
+		@media screen and (max-width: $bp-1280){
+
+			margin-bottom: 15px;
+		}
+    }
+
+
+
+    p
+    {
+        font:
+        {
+            size: 1.6em;
+            family: $font-worksans-light;
+        };
+        line-height: 1.25;
+
+        max-width: 375px;
+
+        animation-delay: .3s;
+
+        a
+        {
+            font-family: $font-worksans-regular;
+        }
+    }
+}
