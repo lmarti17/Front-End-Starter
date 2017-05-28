@@ -42,6 +42,7 @@ body
 		padding: 10px;
 		overflow: auto;
 	}
+
 }
 
 a
@@ -54,6 +55,7 @@ a
 		// pointer-events: none;
 		cursor: default;
 	}
+
 }
 .wrapper
 {
@@ -75,13 +77,6 @@ a
 		height: calc(100vh - 20px);
 		border-width: 5px;
 	}
-
-	// @media screen and (max-width: $bp-1024){
-	//
-	// 	display: block;
-	// 	padding: 50px;
-	// 	height: calc(100vh - 50px);
-	// }
 
 	@media screen and (max-width: $bp-736){
 

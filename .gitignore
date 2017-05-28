@@ -4,4 +4,8 @@
 *.gitkeep
 npm-debug.log
 node_modules/*
+<<<<<<< HEAD
 dist/scripts/app.js.map
+=======
+dist/
+>>>>>>> c4617800790092ddd4d9454825cffe536ec23fbf

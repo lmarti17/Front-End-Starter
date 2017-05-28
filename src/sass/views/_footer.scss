@@ -1,14 +1,12 @@
 .footer
 {
-    // position: absolute;
-    // left: 50px;
-    // bottom: 15px;
 
     @media screen and (max-width: $bp-736){
 
         position: initial;
 
     }
+
     ul li
     {
         display: inline-block;

@@ -26,7 +26,6 @@
 		margin-bottom: 30px;
 	}
 
-
 	ul {
 		padding-left: 10px;
 		display: inline-block;
@@ -41,6 +40,7 @@
         padding-left: 25px;
 
 		animation: textArrival .2s forwards;
+
 		opacity: 0;
 
 
@@ -70,8 +70,6 @@
             }
 
             display: inline-block;
-
-            // text-decoration: none;
 
 			&:hover
 			{
@@ -132,19 +130,3 @@
 		}
 	}
 }
-
-
-
-// Animation delay => LAB
-// .lab{
-// 	h3 {
-// 		animation-delay: 0.5s;
-// 	}
-// 	ul li {
-// 		@for $i from 1 through 4 {
-// 			&:nth-child(#{$i}) {
-// 				animation-delay: #{$i * .1s + 0.65s};
-// 			}
-// 		}
-// 	}
-// }
