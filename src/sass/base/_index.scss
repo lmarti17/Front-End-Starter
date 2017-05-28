@@ -31,10 +31,11 @@ body
 		font-size: 62.5%;
 	}
 
-	// @media screen and (max-width: $bp-1280){
-	//
-	// 	padding: 20px;
-	// }
+	@media screen and (max-width: $bp-1280){
+
+		padding: 10px;
+		font-size: 45%;
+	}
 
 	@media screen and (max-width: $bp-736){
 
@@ -71,16 +72,16 @@ a
 	@media screen and (max-width: $bp-1280){
 
 		padding: 40px;
-		height: calc(100vh - 40px);
+		height: calc(100vh - 20px);
 		border-width: 5px;
 	}
 
-	@media screen and (max-width: $bp-1024){
-
-		display: block;
-		padding: 50px;
-		height: calc(100vh - 50px);
-	}
+	// @media screen and (max-width: $bp-1024){
+	//
+	// 	display: block;
+	// 	padding: 50px;
+	// 	height: calc(100vh - 50px);
+	// }
 
 	@media screen and (max-width: $bp-736){
 

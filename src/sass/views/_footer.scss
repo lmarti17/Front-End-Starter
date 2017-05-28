@@ -20,7 +20,7 @@
 
         animation: textArrivalFooter .5s forwards;
 
-		@for $i from 1 through 4 {
+		@for $i from 1 through 5 {
 			&:nth-child(#{$i}) {
 				animation-delay: #{$i * .15s + 1.1s};
 			}
